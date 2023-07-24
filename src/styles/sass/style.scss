@@ -1,0 +1,47 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+
+$header-lines-color: rgba(186, 187, 197, 1);
+$hover-color: rgba(231, 20, 20, 1);
+$button-color: rgba(255, 67, 67, 1);
+
+@mixin container{
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+@mixin button-type{
+    font-weight: 900;
+    font-size: 24px;
+    text-transform: uppercase;
+    display: block;
+
+    color: white;
+    background-color: $button-color;
+    border: none;
+    
+    width: 369px;
+    height: 77px;
+    margin: 0 auto;
+    
+    transition: .7s;
+}
+
+@import './header.scss';
+@import './main-page.scss';
+@import './features.scss';
+@import './work.scss';
+@import './team.scss';
+@import './swiper.scss';
+@import './download.scss';
+@import './footer.scss';
+@import '/node_modules/swiper/swiper.scss';
+@import '/node_modules/swiper/modules/navigation.scss';
+@import '/node_modules/swiper/modules/pagination.scss';
+

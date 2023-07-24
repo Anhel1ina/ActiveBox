@@ -1,0 +1,52 @@
+.header-container{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.header-content{
+    @include container;
+    font-family: 'Raleway', sans-serif;
+
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__separator{
+        margin: 0;
+        border: none;
+        height: 1px;
+        background-color: $header-lines-color;
+    }
+}
+
+.nav-content{
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+
+
+    &__item{
+        width: 134px;
+        height: 101px;
+        text-decoration: none;
+        color: white;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: .7s;
+    }
+
+    &__item:hover{
+        border-bottom: 3px solid $header-lines-color;
+    }
+
+    &__item:active{
+        color: $hover-color;
+        border-bottom: 3px solid $hover-color;
+    }
+}

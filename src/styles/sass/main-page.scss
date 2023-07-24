@@ -1,0 +1,40 @@
+.main-page-container{
+    background: linear-gradient(rgba(37, 43, 73, .8), rgba(37, 43, 73, .8)),
+    url(/src/images/features-banner.png) center / cover no-repeat;
+}
+
+.main-page-content{
+    @include container;
+    padding: 230px 0 120px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+
+    &__h1{
+        font-size: 64px;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin: 0 0 31px;
+        text-align: center;
+    }
+
+    &__text{
+        font-weight: 400;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    &__button{
+        @include button-type;
+
+        &:hover{
+            background-color: $hover-color;
+        }
+    
+        &:active{
+            box-shadow: 4px 4px 30px 0px $button-color;
+            background-color: $button-color;
+        }
+    }
+}
+

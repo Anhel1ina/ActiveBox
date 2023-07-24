@@ -1,0 +1,34 @@
+.download-content{
+    @include container;
+    padding: 131px 0 114px;
+    font-family: 'Raleway', sans-serif;
+
+    &__h3{
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+        text-transform: capitalize;
+        margin: 0 0 22px 0;
+    }
+
+    &__text{
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 48px;
+    }
+
+    &__button{
+        @include button-type;
+
+        &:hover{
+            background-color: $hover-color;
+        }
+
+        &:active{
+            box-shadow: 4px 4px 30px 0px $button-color;
+            background-color: $button-color;
+        }
+    }
+}

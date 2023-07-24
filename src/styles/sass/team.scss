@@ -1,0 +1,39 @@
+.team-content{
+    @include container;
+
+    font-family: 'Raleway', sans-serif;
+    padding: 114px 0 0;
+
+    display: flex;
+
+    &__block{
+        width: 100vw;
+        max-width: calc(100vw/4);
+    }
+
+    &__block:not(:last-child){
+        margin-right: 30px;
+    }
+}
+
+.team-member-block{
+    &__name{
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: capitalize;
+        margin: 30px 0 0;
+    }
+
+    &__occup{
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 5px 0 0;
+        color: rgba(255, 67, 67, 1);
+    }
+
+    &__text{
+        margin: 18px 0 38px;
+    }
+}
+
