@@ -10,10 +10,39 @@ $header-lines-color: rgba(186, 187, 197, 1);
 $hover-color: rgba(231, 20, 20, 1);
 $button-color: rgba(255, 67, 67, 1);
 
-@mixin container{
+@mixin base{
     width: 100%;
-    max-width: 1170px;
     margin: 0 auto;
+}
+
+@mixin container{
+    @include base;
+    max-width: 1170px;
+}
+
+@mixin container_max1200{
+    max-width: 980px;
+    @include base;
+}
+
+@mixin container_max990{
+    max-width: 700px;
+    @include base;
+}
+
+@mixin container_max730{
+    max-width: 500px;
+    @include base;
+}
+
+@mixin container_max510{
+    max-width: 360px;
+    @include base;
+}
+
+@mixin container_max390{
+    max-width: 280px;
+    @include base;
 }
 
 @mixin button-type{
@@ -26,8 +55,8 @@ $button-color: rgba(255, 67, 67, 1);
     background-color: $button-color;
     border: none;
     
-    width: 369px;
-    height: 77px;
+    width: 370px;
+    height: 80px;
     margin: 0 auto;
     
     transition: .7s;
