@@ -1,7 +1,12 @@
 .header-container{
     position: absolute;
     top: 0;
+    left: 0;
     width: 100%;
+}
+
+.header-container.out {
+    transform: translateY(-100%);
 }
 
 .header-content{
@@ -56,6 +61,7 @@
         height: 101px;
         text-decoration: none;
         color: white;
+        border-bottom: 3px solid rgba(0, 0, 0, 0);
 
         display: flex;
         align-items: center;
@@ -65,7 +71,7 @@
     }
 
     &__item:hover{
-        border-bottom: 3px solid $header-lines-color;
+        border-bottom-color: $header-lines-color;
     }
 
     &__item:active{
