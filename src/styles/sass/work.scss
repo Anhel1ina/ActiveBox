@@ -93,9 +93,8 @@
 
 @media (max-width: 730px){
     .work-content{
-        grid-template-columns: repeat(2,calc(50vw - 4px));
+        grid-template-columns: repeat(2, 1fr);
         width: 99%;
-        column-gap: 6px;
     }
 }
 

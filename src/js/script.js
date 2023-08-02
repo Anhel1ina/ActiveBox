@@ -10,16 +10,3 @@ const swiper = new Swiper('.swiper-container', {
         clickable: true,
     },
 });
-
-var header = $('.header-container'),
-		scrollPrev = 0;
-
-$(window).scroll(function() {
-	var scrolled = $(window).scrollTop();
-	if ( scrolled > 100 && scrolled > scrollPrev ) {
-		header.addClass('out');
-	} else {
-		header.removeClass('out');
-	}
-	scrollPrev = scrolled;
-});
