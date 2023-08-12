@@ -26,3 +26,15 @@ var prevScrollpos = window.scrollY;
                 }
             }
         }
+
+const menuItems = document.querySelectorAll('.nav-content__item');
+const menuIcon = document.getElementById("burger-menu");
+        
+if(menuIcon.checked = true){
+    menuItems.forEach((menuItem) => {
+        menuItem.addEventListener('click', () => {
+            menuIcon.checked = false;
+        });
+    });
+}
+        
