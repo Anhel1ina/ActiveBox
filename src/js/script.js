@@ -5,6 +5,7 @@ const swiper = new Swiper('.swiper-container', {
     modules: [Navigation, Pagination],
     slidesPerView: 1,
     spaceBetween: 10,
+    loop: true,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
